@@ -83,13 +83,27 @@ main .heading {
 	cursor: pointer;
 }
 .logo{
-	transition: 1s;
+	transition:transform 1s;
+}
+.myLogo {
+  font-family: 'Cinzel', serif;
+  font-weight:600;
+  font-size: 2.2rem;
+  color: #ffffff;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  text-shadow:
+    2px 4px 0 var(--dark-green),
+    4px 4px 0 var(--dark);
+  transition:transform 1.6s;
+}
+.greener{
+	margin-bottom:-12px;
+	transition:transform 1.6s;
 }
 .logo:hover{
-	transform: scaleX(1.1);
-	filter: saturate(10);
+   transform: scale(1.06);
 }
-
 header {
 	padding: 0;
 	margin: 0;
@@ -97,7 +111,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 20;
+	z-index:20;
 }
 
 header nav div {
