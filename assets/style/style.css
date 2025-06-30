@@ -141,6 +141,7 @@ header nav {
 
 header nav .logo {
 	padding: 0 20px;
+	height:56px;
 }
 
 header nav .logo span {
@@ -317,6 +318,7 @@ main .intro .me .picture {
 }
 main .intro .me .picture img {
 	width: 100%;
+	object-fit:contain;
 }
 
 /* Footer */
