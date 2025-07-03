@@ -10,6 +10,9 @@ function sendMessage() {
     }
     else{
        emailjs.send("service_b1hvdip","template_vkte5lc",params).then(alert("your message has been received!!"))
-    }
+        document.getElementById("name").value = " ";
+        document.getElementById("email").value =" ";
+        document.getElementById("message").value =" ";
+     }
    
 }
