@@ -302,6 +302,7 @@ body {
   flex: 1.2;
 }
 
+
 .hero-image-container {
   flex: 0.8;
   display: flex;
@@ -316,9 +317,9 @@ body {
 }
 
 .main-heading {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
@@ -327,29 +328,31 @@ body {
   font-weight: 500;
   margin-bottom: 3rem;
   color: var(--color-subtext);
+  line-height: 2.0;
 }
 
 .hero-actions {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 3rem;
 }
 
-.profile-image-placeholder {
+.profile-image{
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-secondary-accent)
-  );
   border: 5px solid var(--color-card-bg);
   box-shadow: 0 0 0 10px var(--color-primary), 0 0 50px var(--color-shadow);
   transition: all 0.5s var(--transition-ease);
 }
 
-.profile-image-placeholder:hover {
+.hero-image{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+.profile-image:hover {
   box-shadow: 0 0 0 15px var(--color-secondary-accent),
     0 0 70px var(--color-primary);
 }
@@ -386,7 +389,7 @@ body {
   }
 
   .main-heading {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
   }
 
   .animated-text {
@@ -411,7 +414,7 @@ body {
     order: -1;
   }
 
-  .profile-image-placeholder {
+  .profile-image{
     width: 200px;
     height: 200px;
   }
@@ -419,7 +422,7 @@ body {
 
 @media (max-width: 576px) {
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
   }
 
   .animated-text {
