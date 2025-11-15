@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mkenani - Projects</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        >Mkenani<span class="logo-accent">.dev</span></a
+      >
+
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link current-page">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="icon-btn theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section projects-section">
+        <div class="projects-header animated-element">
+          <h2 class="section-title">My Creative Portfolio</h2>
+          <p class="section-subtitle">
+            A collection of my recent work showcasing technical skills and
+            problem-solving across different domains.
+          </p>
+        </div>
+
+        <div class="projects-grid-container" id="projects-container">
+          <div class="project-card animated-element delay-200">
+            <div class="project-image">
+              <img
+                src="https://placehold.co/600x400/00CED1/ffffff?text=E-commerce+Platform"
+                alt="E-commerce Platform Screenshot"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/00CED1/ffffff?text=E-commerce'"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Modern E-commerce Platform</h3>
+              <p class="project-description">
+                A full-stack application for retail, featuring user
+                authentication, cart management, and secure payment processing.
+                Built with React and Node.js.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe API</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-live"
+                  aria-label="Live Demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animated-element delay-300">
+            <div class="project-image">
+              <img
+                src="https://placehold.co/600x400/8A2BE2/ffffff?text=AI+Chatbot+Dashboard"
+                alt="AI Chatbot Dashboard Screenshot"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/8A2BE2/ffffff?text=AI+Dashboard'"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Conversational AI Dashboard</h3>
+              <p class="project-description">
+                An internal tool to manage and monitor a Gemini API-powered
+                chatbot service, providing usage metrics and response logs.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Firestore</span>
+                <span class="tech-tag">Gemini API</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-live"
+                  aria-label="Live Demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animated-element delay-400">
+            <div class="project-image">
+              <img
+                src="https://placehold.co/600x400/FFD700/000000?text=Task+Manager+App"
+                alt="Task Management App Screenshot"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFD700/000000?text=Task+Manager'"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Cross-Platform Task Manager</h3>
+              <p class="project-description">
+                A collaborative to-do application with real-time sync, priority
+                sorting, and user assignment features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS/JS</span>
+                <span class="tech-tag">Firebase Auth</span>
+                <span class="tech-tag">Firestore</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-live"
+                  aria-label="Live Demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="#"
+                  download
+                  class="link-btn link-btn-apk"
+                  aria-label="Download APK File"
+                >
+                  <i class="fas fa-mobile-alt"></i>APK
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="scroll-hint" class="scroll-hint">
+            &larr; Scroll to see more projects &rarr;
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          &copy; <span id="current-year"></span> Mkenani. All rights
+          reserved.
+        </p>
+        <p>Designed and Built by Mphatso Kenani</p>
+        <div class="footer-social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

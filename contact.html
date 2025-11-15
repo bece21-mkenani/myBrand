@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mkenani - Contact</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        >Mkenani<span class="logo-accent">.dev</span></a
+      >
+
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link current-page">Contact</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="icon-btn theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="section contact-section">
+        <div class="contact-header animated-element">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision. Send me a message, and I'll
+            get back to you quickly!
+          </p>
+        </div>
+
+        <div class="contact-content-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info animated-element delay-200">
+            <h3 class="info-heading">Contact Details</h3>
+
+            <div class="info-item">
+              <i class="fas fa-envelope info-icon"></i>
+              <a href="mailto:mphatso@example.com" class="info-text"
+                >mphatso@example.com</a
+              >
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt info-icon"></i>
+              <span class="info-text">Blantyre, Malawi</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone info-icon"></i>
+              <span class="info-text">+265 99X XXX XXX</span>
+            </div>
+
+            <div class="social-links contact-social">
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <form id="contactForm" class="contact-form animated-element delay-300">
+            <h3 class="form-heading">Send a Message</h3>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <!-- IMPORTANT: EmailJS uses these name attributes to match template variables -->
+              <input type="text" id="name" name="from_name" required /> 
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="from_email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full-width">
+              Send Message
+            </button>
+
+            <!-- Message box for form status (instead of alert) -->
+            <div id="form-status" class="form-status-message"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          &copy; <span id="current-year"></span> Mkenani. All rights
+          reserved.
+        </p>
+        <p>Designed and Built by Mphatso Kenani</p>
+        <div class="footer-social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
