@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mkenani</title> 
-    
-    <!-- External Stylesheets -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-
+    <!-- ====================== CONTENT OVERLAY ====================== -->
+    <span class="overlay-content" id="overlay-content"></span>
     <!-- ====================== HEADER SECTION ====================== -->
-    <header class="header">
-        <a href="index.html" class="logo">Mkenani<span class="logo-accent">.dev</span></a>
-        
-        <!-- Main Navigation -->
-        <nav class="navbar">
-            <a href="index.html" class="nav-link">Home</a>
+    <header class="header ">
+        <a href="index.html" class="logo">Mken<span class="logo-accent">ani.</span></a>
+        <nav class="navbar tilt-in-fwd-tr">
+            <a href="../index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link current-page">About</a> 
             <a href="skills.html" class="nav-link">Skills</a>
             <a href="projects.html" class="nav-link">Projects</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </nav>
-        
-        <!-- Header Controls (Theme Toggle & Mobile Menu) -->
         <div class="header-controls">
             <button id="theme-toggle" class="icon-btn theme-toggle">
                 <i class="fas fa-sun" id="theme-icon"></i>
@@ -37,31 +32,24 @@
     <!-- ====================== MAIN CONTENT ====================== -->
     <main class="main-content">
         <section class="section about-section">
-            <!-- Page Heading -->
             <h1 class="page-heading animated-element">
                 Turning <span class="gradient-text">Ideas</span> into Reality
             </h1>
-            
-            <!-- About Content Grid -->
             <div class="about-grid">
-                
-                <!-- Left Column: Summary & Stats -->
                 <div class="about-summary animated-element delay-200">
                     <p class="summary-paragraph">
-                        I'm <strong>Mphatso Kenani</strong>, a versatile <strong>Front-End Developer</strong> with over 4 years of experience specializing in creating <strong>clean, highly performant, and responsive web applications</strong>. My passion lies in bridging the gap between design and functionality, ensuring every user interaction is intuitive and accessible.
+                        I'm <strong>Mphatso Kenani</strong>, a versatile <strong>Software Developer</strong> with over 4 years of experience specializing in creating <strong>clean, highly performant, and responsive web applications</strong>. My passion lies in bridging the gap between design and functionality, ensuring every user interaction is intuitive and accessible.
                     </p>
                     <p class="summary-paragraph">
-                        I thrive in environments where continuous learning is paramount. While my primary stack revolves around <strong>modern JavaScript frameworks (like React)</strong>, I maintain a strong foundation in pure <strong>HTML, CSS (including Sass/Tailwind)</strong>, and <strong>vanilla JavaScript</strong>—the building blocks of the web.
+                        I thrive in environments where continuous learning is paramount. While my primary stack revolves around <strong>modern JavaScript frameworks (like React)</strong>, I maintain a strong foundation in pure <strong>HTML, CSS (including Sass/Tailwind)</strong>, and <strong>vanilla JavaScript</strong>—the building blocks of the web as well as node with express and dart with flutter for backend and mobile development.
                     </p>
-                    
-                    <!-- Statistics Section -->
                     <div class="stats-wrapper animated-element delay-300">
                         <div class="stat-item first-item">
                             <span class="counter" data-target="4">0</span><span class="plus">+</span>
                             Years Experience
                         </div>
                         <div class="stat-item middle-item">
-                            <span class="counter" data-target="20">0</span><span class="plus">+</span>
+                            <span class="counter" data-target="10">0 +</span><span class="plus">+</span>
                             Projects Completed
                         </div>
                         <div class="stat-item last-item">
@@ -69,25 +57,25 @@
                             Commitment
                         </div>
                     </div>
-                    
-                    <!-- Call-to-Action Buttons -->
                     <div class="summary-actions">
                         <a href="contact.html" class="btn btn-primary">Let's Collaborate</a>
-                        <a href="#" class="btn btn-secondary">Download Resume</a>
+                        <a href="../assets/cv.pdf" class="btn btn-secondary">Download Resume</a>
                     </div>
                 </div>
-
-                <!-- Right Column: Timeline -->
                 <div class="about-timeline animated-element delay-400">
                     <h3>My Journey</h3>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <h4>2022 - Present</h4>
-                            <p>Senior Front-End Developer @ TechCorp Solutions. Focused on scalable UI architecture and state management.</p>
+                            <h4>2024 - Present</h4>
+                            <p>Full Stack mobile Developer @Imosys. Focused on scalable UI architecture and state management.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>2022 - 2024</h4>
+                            <p>Worked as a freelancer @growmetra(nigeria). Focused on backend development mainly on payment intergration.</p>
                         </div>
                         <div class="timeline-item">
                             <h4>2020 - 2022</h4>
-                            <p>Web Developer @ Digital Innovations Ltd. Built and maintained client websites using WordPress and custom front-end code.</p>
+                            <p>Web Developer Built and maintained client websites using HTML, CSS, JS and custom front-end code.</p>
                         </div>
                         <div class="timeline-item">
                             <h4>2018 - 2020</h4>
@@ -102,17 +90,14 @@
     
     <!-- ====================== FOOTER SECTION ====================== -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; <span id="current-year">2025</span> Mkenani. All rights reserved.</p>
-            <p>Designed and Built by Mphatso Kenani | Pure HTML/CSS/JS</p>
-            <div class="footer-social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- External JavaScript -->
-    <script src="script.js"></script>
+      <div class="footer-content">
+        <p>Mphatso Kenani</p>
+        <p class="footer-italic">
+          &copy; <span id="current-year" ></span> Mkenani || All rights reserved.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
+    <script src="../script.js"></script>
 </body>
 </html>

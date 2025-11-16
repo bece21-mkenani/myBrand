@@ -16,25 +16,23 @@
   </head>
 
   <body>
+    <!-- ====================== CONTENT OVERLAY ====================== -->
+    <span class="overlay-content" id="overlay-content"></span>
     <!-- ====================== HEADER SECTION ====================== -->
     <header class="header">
       <a href="index.html" class="logo">
         Mken<span class="logo-accent">ani.</span>
       </a>
-
-      <!-- Main Navigation -->
-      <nav class="navbar">
+      <nav class="navbar tilt-in-fwd-tr">
         <a href="index.html" class="nav-link current-page">Home</a>
-        <a href="about.html" class="nav-link">About</a>
+        <a href="./pages/about.html" class="nav-link">About</a>
         <a href="skills.html" class="nav-link">Skills</a>
         <a href="projects.html" class="nav-link">Projects</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
-
-      <!-- Header Controls -->
       <div class="header-controls">
-        <button id="theme-toggle" class="icon-btn theme-toggle">
-          <i class="fas fa-moon"></i>
+        <button id="theme-toggle" class="icon-btn theme-toggle switcher-color">
+          <i class="fas fa-moon "></i>
         </button>
         <div id="menu-btn" class="fas fa-bars"></div>
       </div>
@@ -43,7 +41,6 @@
     <!-- ====================== MAIN CONTENT ====================== -->
     <main class="main-content">
       <section class="section hero-section">
-        <!-- Hero Text Content -->
         <div class="hero-text-content animated-element">
           <p class="greeting">Hi there, I'm</p>
           <h1 class="main-heading">Mphatso Kenani</h1>
@@ -53,25 +50,20 @@
             <span class="gradient-text">modern</span>, and
             <span class="gradient-text">functional</span> web experiences.
           </div>
-
-          <!-- Call-to-Action Buttons -->
           <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary margin-botton">View My Work</a>
+            <a href="./projects.html" class="btn btn-primary margin-botton">View My Work</a>
             <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
           </div>
-
-          <!-- Social Media Links -->
           <div class="social-links">
           <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
-          <a href="www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
           <a href="mailto:haraalbert50@gmail.com"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
-
-        <!-- Hero Image -->
         <div class="hero-image-container animated-element delay-200">
           <div class="profile-image">
-            <img class="hero-image" src="./assets/kenani.jpeg" alt="Mkenani">
+            <span class="image-hero-overlay"></span>
+            <img class="hero-image" src="./assets/kenani.jpg" alt="Mkenani">
           </div>
         </div>
       </section>
@@ -80,15 +72,14 @@
     <!-- ====================== FOOTER SECTION ====================== -->
     <footer class="footer">
       <div class="footer-content">
-        <p>
-          &copy; <span id="current-year">2025</span> Mkenani. All rights reserved.
+        <p>Mphatso Kenani</p>
+        <p class="footer-italic">
+          &copy; <span id="current-year" ></span> Mkenani || All rights reserved.
         </p>
         <div class="footer-social-links">
           <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
-          <a href="www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
     </footer>
-
-    <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
