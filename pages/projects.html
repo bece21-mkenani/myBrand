@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mkenani - Projects</title>
+    <title>Mkenani</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+   <!-- ====================== CONTENT OVERLAY ====================== -->
+    <span class="overlay-content" id="overlay-content"></span>
     <header class="header">
       <a href="index.html" class="logo"
-        >Mkenani<span class="logo-accent">.dev</span></a
+        >Mken<span class="logo-accent">ani.</span></a
       >
 
       <nav class="navbar">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="skills.html" class="nav-link">Skills</a>
         <a href="projects.html" class="nav-link current-page">Projects</a>
@@ -41,79 +43,40 @@
     <main class="main-content">
       <section class="section projects-section">
         <div class="projects-header animated-element">
-          <h2 class="section-title">My Creative Portfolio</h2>
+          <h2 class="section-title">My  <span class="gradient-text">Portfolio</span></h2>
           <p class="section-subtitle">
-            A collection of my recent work showcasing technical skills and
-            problem-solving across different domains.
+            A collection of my recent work showcasing technical skills.
           </p>
         </div>
 
         <div class="projects-grid-container" id="projects-container">
-          <div class="project-card animated-element delay-200">
+          <div class="project-card " data-aos="flip-up">
             <div class="project-image">
               <img
-                src="https://placehold.co/600x400/00CED1/ffffff?text=E-commerce+Platform"
+                src="../assets/goal-mate.png"
                 alt="E-commerce Platform Screenshot"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/00CED1/ffffff?text=E-commerce'"
               />
             </div>
             <div class="project-content">
-              <h3 class="project-title">Modern E-commerce Platform</h3>
+              <h3 class="project-title">Goal Mate</h3>
               <p class="project-description">
-                A full-stack application for retail, featuring user
-                authentication, cart management, and secure payment processing.
-                Built with React and Node.js.
+A full-stack application for student collaboration, featuring AI-powered study tools, real-time group chat, and secure, level-locked rooms. 
+Built with,
               </p>
               <div class="project-tech">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Stripe API</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="link-btn link-btn-github"
-                  aria-label="GitHub Repository"
-                >
-                  <i class="fab fa-github"></i> Code
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  class="link-btn link-btn-live"
-                  aria-label="Live Demo"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card animated-element delay-300">
-            <div class="project-image">
-              <img
-                src="https://placehold.co/600x400/8A2BE2/ffffff?text=AI+Chatbot+Dashboard"
-                alt="AI Chatbot Dashboard Screenshot"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/8A2BE2/ffffff?text=AI+Dashboard'"
-              />
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Conversational AI Dashboard</h3>
-              <p class="project-description">
-                An internal tool to manage and monitor a Gemini API-powered
-                chatbot service, providing usage metrics and response logs.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Angular</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Firestore</span>
+                <span class="tech-tag">Socket.io </span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Pay Stack</span>
                 <span class="tech-tag">Gemini API</span>
+                 <span class="tech-tag">Express js</span>
+                  <span class="tech-tag">TypeScript</span>
+                   <span class="tech-tag">...</span>
               </div>
               <div class="project-links">
                 <a
-                  href="#"
+                  href="https://github.com/bece21-mkenani"
                   target="_blank"
                   class="link-btn link-btn-github"
                   aria-label="GitHub Repository"
@@ -121,8 +84,8 @@
                   <i class="fab fa-github"></i> Code
                 </a>
                 <a
-                  href="#"
-                  target="_blank"
+                  href="https://goal-mate-rose.vercel.app/"
+                  target="#"
                   class="link-btn link-btn-live"
                   aria-label="Live Demo"
                 >
@@ -131,30 +94,30 @@
               </div>
             </div>
           </div>
-
-          <div class="project-card animated-element delay-400">
+          <div class="project-card"  data-aos="flip-up">
             <div class="project-image">
               <img
-                src="https://placehold.co/600x400/FFD700/000000?text=Task+Manager+App"
-                alt="Task Management App Screenshot"
-                onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFD700/000000?text=Task+Manager'"
+                src="../assets/agrohealthap.jpeg"
+                alt="agrohealth App"
               />
             </div>
             <div class="project-content">
-              <h3 class="project-title">Cross-Platform Task Manager</h3>
+              <h3 class="project-title">agrohealth App</h3>
               <p class="project-description">
-                A collaborative to-do application with real-time sync, priority
-                sorting, and user assignment features.
+  A mobile app for Malawian farmers with AI crop disease detection, weather alerts, and a community Q&A hub. It’s built with,
               </p>
               <div class="project-tech">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS/JS</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag"> FastAPI</span>
                 <span class="tech-tag">Firebase Auth</span>
-                <span class="tech-tag">Firestore</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Express js</span>
+                  <span class="tech-tag">...</span>
               </div>
               <div class="project-links">
                 <a
-                  href="#"
+                  href="https://github.com/bece21-mkenani"
                   target="_blank"
                   class="link-btn link-btn-github"
                   aria-label="GitHub Repository"
@@ -162,15 +125,7 @@
                   <i class="fab fa-github"></i> Code
                 </a>
                 <a
-                  href="#"
-                  target="_blank"
-                  class="link-btn link-btn-live"
-                  aria-label="Live Demo"
-                >
-                  <i class="fas fa-external-link-alt"></i> Live Demo
-                </a>
-                <a
-                  href="#"
+                  href="../assets/agrohealthAp.apk"
                   download
                   class="link-btn link-btn-apk"
                   aria-label="Download APK File"
@@ -180,6 +135,130 @@
               </div>
             </div>
           </div>
+          
+          <div class="project-card " data-aos="flip-up">
+            <div class="project-image">
+              <img
+                src="../assets/growmetra.png"
+                alt="growmetra"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Growmetra</h3>
+              <p class="project-description">
+                A full-stack application for Farmers, Every harvest tells a story.
+                Every transaction builds a future. GrowMetra connects farmers with buyers. Built with,
+               </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Firestore</span>
+                <span class="tech-tag">Gemini API</span>
+                 <span class="tech-tag">Pay Stack</span>
+                 <span class="tech-tag">Figma</span>
+                 <span class="tech-tag">...</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/bece21-mkenani"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-live"
+                  aria-label="Live Demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+           <div class="project-card " data-aos="flip-up">
+            <div class="project-image">
+              <img
+                src="../assets/tiwalire.jpeg"
+                alt="learning App"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">learning App</h3>
+              <p class="project-description">
+                 An offline-first learning app for nursery kids with interactive lessons, audio, and tracing features.
+                It runs fully without internet. Built with, 
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Hive</span>
+                <span class="tech-tag">Isar</span>
+                <span class="tech-tag">Provider</span>
+                  <span class="tech-tag">...</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/bece21-mkenani"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="../assets/agrohealthAp.apk"
+                  download
+                  class="link-btn link-btn-apk"
+                  aria-label="Download APK File"
+                >
+                  <i class="fas fa-mobile-alt"></i>APK
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card " data-aos="flip-up">
+            <div class="project-image">
+              <img
+                src="../assets/tech-one.png"
+                alt="Techonneworks"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Techonneworks</h3>
+              <p class="project-description">
+               A static app for Techonneworks that showcases activities and encourages early tech learning for
+                children through drones, robotics, and programming.
+               </p>
+              <div class="project-tech">
+                <span class="tech-tag">Html</span>
+                <span class="tech-tag">Css</span>
+                <span class="tech-tag">JavaScript</span>
+                 <span class="tech-tag">...</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/bece21-mkenani"
+                  target="_blank"
+                  class="link-btn link-btn-github"
+                  aria-label="GitHub Repository"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-btn link-btn-live"
+                  aria-label="Live Demo"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div id="scroll-hint" class="scroll-hint">
             &larr; Scroll to see more projects &rarr;
@@ -187,22 +266,23 @@
       </section>
     </main>
 
+    <!-- ====================== FOOTER SECTION ====================== -->
     <footer class="footer">
       <div class="footer-content">
-        <p>
-          &copy; <span id="current-year"></span> Mkenani. All rights
-          reserved.
+        <p>Mphatso Kenani</p>
+        <p class="footer-italic">
+          &copy; <span id="current-year" ></span> Mkenani || All rights reserved.
         </p>
-        <p>Designed and Built by Mphatso Kenani</p>
         <div class="footer-social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+          <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
     </footer>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
   </body>
 </html>

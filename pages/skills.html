@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mkenani - Technical Skills</title>
+    <title>Mkenani</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+  <!-- ====================== CONTENT OVERLAY ====================== -->
+    <span class="overlay-content" id="overlay-content"></span>
     <header class="header">
       <a href="index.html" class="logo"
-        >Mkenani<span class="logo-accent">.dev</span></a
+        >Mken<span class="logo-accent">ani.</span></a
       >
 
       <nav class="navbar">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="skills.html" class="nav-link current-page">Skills</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -37,7 +40,7 @@
     </header>
     <main class="main-content">
       <section class="section skills-section">
-        <h1 class="page-heading">
+        <h1 class="page-heading skill-h1-center">
           My Technical <span class="gradient-text">Expertise</span>
         </h1>
 
@@ -48,53 +51,53 @@
 
         <div class="skills-container">
           <h2 class="category-heading animated-element delay-200">
-            <i class="fas fa-laptop-code"></i> Frontend Development
+            <i class="fas fa-laptop-code"></i> Frontend Tools
           </h2>
           <div class="skill-grid">
-            <div class="skill-card animated-element delay-300">
+            <div class="skill-card" data-aos="flip-up">
               <i class="fab fa-html5 skill-icon"></i>
               <h3>HTML5</h3>
               <p>Semantic markup and web accessibility.</p>
             </div>
-            <div class="skill-card animated-element delay-400">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fab fa-css3-alt skill-icon"></i>
-              <h3>CSS3 / SASS</h3>
-              <p>Modern layouts, responsive design, and pre-processing.</p>
+              <h3>CSS3</h3>
+              <p>Modern layouts and responsive design.</p>
             </div>
-            <div class="skill-card animated-element delay-500">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fab fa-js-square skill-icon"></i>
               <h3>JavaScript (ES6+)</h3>
               <p>Core logic, DOM manipulation, and asynchronous operations.</p>
             </div>
-            <div class="skill-card animated-element delay-600">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fab fa-react skill-icon"></i>
-              <h3>React / Redux</h3>
+              <h3>React</h3>
               <p>Component-based architecture and state management.</p>
             </div>
-            <div class="skill-card animated-element delay-700">
+            <div class="skill-card" data-aos="flip-up">
               <i class="fas fa-wind skill-icon"></i>
               <h3>Tailwind CSS</h3>
               <p>Rapid utility-first styling and theming.</p>
             </div>
-            <div class="skill-card animated-element delay-800">
+            <div class="skill-card" data-aos="flip-up">
               <i class="fab fa-bootstrap skill-icon"></i>
               <h3>Bootstrap</h3>
               <p>Legacy framework integration and rapid prototyping.</p>
             </div>
           </div>
 
-          <h2 class="category-heading animated-element delay-900">
-            <i class="fas fa-mobile-alt"></i> Mobile Development
+          <h2 class="category-heading animated-element delay-900"">
+            <i class="fas fa-mobile-alt"></i> Mobile Tools
           </h2>
           <div class="skill-grid">
-            <div class="skill-card animated-element delay-1000">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fas fa-code skill-icon" style="color: #00ced1"></i>
               <h3>Dart / Flutter</h3>
               <p>
                 Cross-platform application development with Dart and Flutter.
               </p>
             </div>
-            <div class="skill-card animated-element delay-1100">
+            <div class="skill-card" data-aos="flip-up">
               <i class="fab fa-react skill-icon"></i>
               <h3>React Native</h3>
               <p>Building native mobile apps using JavaScript/React.</p>
@@ -102,43 +105,48 @@
           </div>
 
           <h2 class="category-heading animated-element delay-1200">
-            <i class="fas fa-server"></i> Backend & Development Tools
+            <i class="fas fa-server"></i> Backend Tools
           </h2>
           <div class="skill-grid">
-            <div class="skill-card animated-element delay-1300">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fab fa-node-js skill-icon"></i>
               <h3>Node.js / Express</h3>
               <p>Building RESTful APIs and server-side logic.</p>
             </div>
-            <div class="skill-card animated-element delay-1400">
+              <div class="skill-card " data-aos="flip-up">
+              <i class="fab fa-python skill-icon"></i>
+              <h3>Django</h3>
+              <p>Building RESTful APIs and server-side logic.</p>
+            </div>
+            <div class="skill-card " data-aos="flip-up">
               <i class="fas fa-database skill-icon"></i>
               <h3>Database (SQL/NoSQL)</h3>
-              <p>Data modeling and integration with MongoDB/PostgreSQL.</p>
+              <p>Data modeling and integration</p>
             </div>
-            <div class="skill-card animated-element delay-1500">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fas fa-cloud skill-icon"></i>
               <h3>Cloud Services</h3>
-              <p>Deployment and integration with Firebase/Vercel/Netlify.</p>
+              <p>Firebase, Vercel, Netlify, supabase and render.</p>
             </div>
-            <div class="skill-card animated-element delay-1600">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fas fa-cogs skill-icon"></i>
               <h3>Bundling / Optimization</h3>
               <p>Module bundling and build process with Webpack/Vite.</p>
             </div>
           </div>
 
-          <h2 class="category-heading animated-element delay-1700">
-            <i class="fab fa-git-alt"></i> Version Control & Workflow
+          <h2 class="category-heading"> 
+            <i class="fab fa-git-alt"></i> Version Control 
           </h2>
           <div class="skill-grid">
-            <div class="skill-card animated-element delay-1800">
+            <div class="skill-card " data-aos="flip-up">
               <i class="fab fa-git skill-icon"></i>
               <h3>Git</h3>
               <p>Advanced branching, merging, and conflict resolution.</p>
             </div>
-            <div class="skill-card animated-element delay-1900">
+            <div class="skill-card" data-aos="flip-up">
               <i class="fab fa-github skill-icon"></i>
-              <h3>GitHub / GitLab</h3>
+              <h3>GitHub</h3>
               <p>Repository management, PR reviews, and CI/CD pipelines.</p>
             </div>
           </div>
@@ -148,18 +156,19 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>
-          &copy; <span id="current-year">2025</span> Mkenani. All rights
-          reserved.
+        <p>Mphatso Kenani</p>
+        <p class="footer-italic">
+          &copy; <span id="current-year" ></span> Mkenani || All rights reserved.
         </p>
-        <p>Designed and Built by Mphatso Kenani | Pure HTML/CSS/JS</p>
         <div class="footer-social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+          <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
   </body>
 </html>

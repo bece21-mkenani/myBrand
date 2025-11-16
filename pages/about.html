@@ -6,6 +6,7 @@
     <title>Mkenani</title> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -31,9 +32,20 @@
 
     <!-- ====================== MAIN CONTENT ====================== -->
     <main class="main-content">
+        <div class="about-image">
+            <div class="main-content-wrapper">
+            <span class="about-image-ovelay"></span>
+            <img src="../assets/mkenani.jpg" alt="mkenani">
+            </div>
+            <span class="about-image-links">
+                <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:haraalbert50@gmail.com"><i class="fas fa-envelope"></i></a>
+            </span>
+        </div>
         <section class="section about-section">
-            <h1 class="page-heading animated-element">
-                Turning <span class="gradient-text">Ideas</span> into Reality
+            <h1 class="page-heading about-h1-sm-centering animated-element">
+                Turning  <span class="gradient-text"> Ideas into </span> Reality
             </h1>
             <div class="about-grid">
                 <div class="about-summary animated-element delay-200">
@@ -41,7 +53,7 @@
                         I'm <strong>Mphatso Kenani</strong>, a versatile <strong>Software Developer</strong> with over 4 years of experience specializing in creating <strong>clean, highly performant, and responsive web applications</strong>. My passion lies in bridging the gap between design and functionality, ensuring every user interaction is intuitive and accessible.
                     </p>
                     <p class="summary-paragraph">
-                        I thrive in environments where continuous learning is paramount. While my primary stack revolves around <strong>modern JavaScript frameworks (like React)</strong>, I maintain a strong foundation in pure <strong>HTML, CSS (including Sass/Tailwind)</strong>, and <strong>vanilla JavaScript</strong>—the building blocks of the web as well as node with express and dart with flutter for backend and mobile development.
+                        I thrive in environments where continuous learning is paramount. While my primary stack revolves around <strong>modern JavaScript frameworks (like React)</strong>, I maintain a strong foundation in pure <strong>HTML, CSS (including Sass/Tailwind)</strong>, and <strong>vanilla JavaScript</strong>the building blocks of the web as well as node with express and dart with flutter for backend and mobile development.
                     </p>
                     <div class="stats-wrapper animated-element delay-300">
                         <div class="stat-item first-item">
@@ -65,19 +77,19 @@
                 <div class="about-timeline animated-element delay-400">
                     <h3>My Journey</h3>
                     <div class="timeline">
-                        <div class="timeline-item">
+                        <div class="timeline-item"  data-aos="flip-up">
                             <h4>2024 - Present</h4>
                             <p>Full Stack mobile Developer @Imosys. Focused on scalable UI architecture and state management.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item"  data-aos="flip-up">
                             <h4>2022 - 2024</h4>
                             <p>Worked as a freelancer @growmetra(nigeria). Focused on backend development mainly on payment intergration.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item"  data-aos="flip-up">
                             <h4>2020 - 2022</h4>
                             <p>Web Developer Built and maintained client websites using HTML, CSS, JS and custom front-end code.</p>
                         </div>
-                        <div class="timeline-item">
+                        <div class="timeline-item"  data-aos="flip-up">
                             <h4>2018 - 2020</h4>
                             <p>Junior Developer Training & Certification. Mastered core concepts of web development and best practices.</p>
                         </div>
@@ -98,6 +110,11 @@
         <div class="footer-social-links">
           <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
           <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
+        </footer>
     <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
 </body>
 </html>

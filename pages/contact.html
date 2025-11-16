@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mkenani - Contact</title>
+    <title>Mkenani</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
+   <!-- ====================== CONTENT OVERLAY ====================== -->
+    <span class="overlay-content" id="overlay-content"></span>
     <header class="header">
       <a href="index.html" class="logo"
-        >Mkenani<span class="logo-accent">.dev</span></a
+        >Mken<span class="logo-accent">ani.</span></a
       >
 
       <nav class="navbar">
-        <a href="index.html" class="nav-link">Home</a>
+        <a href="../index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="skills.html" class="nav-link">Skills</a>
         <a href="projects.html" class="nav-link">Projects</a>
@@ -41,23 +43,21 @@
     <main class="main-content">
       <section class="section contact-section">
         <div class="contact-header animated-element">
-          <h2 class="section-title">Get In Touch</h2>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
           <p class="section-subtitle">
-            I'm always open to discussing new projects, creative ideas, or
-            opportunities to be part of your vision. Send me a message, and I'll
-            get back to you quickly!
+           I’m open to new projects, ideas, and opportunities. 
+           Feel free to send a message, and I’ll respond quickly.
           </p>
         </div>
 
         <div class="contact-content-grid">
-          <!-- Contact Info Column -->
           <div class="contact-info animated-element delay-200">
             <h3 class="info-heading">Contact Details</h3>
 
             <div class="info-item">
               <i class="fas fa-envelope info-icon"></i>
               <a href="mailto:mphatso@example.com" class="info-text"
-                >mphatso@example.com</a
+                >haraalbert50@gmail.com</a
               >
             </div>
             <div class="info-item">
@@ -66,24 +66,21 @@
             </div>
             <div class="info-item">
               <i class="fas fa-phone info-icon"></i>
-              <span class="info-text">+265 99X XXX XXX</span>
+              <span class="info-text">+265 988 827 609</span>
             </div>
 
             <div class="social-links contact-social">
-              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="LinkedIn"
+              <a href="https://github.com/bece21-mkenani" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="http://www.linkedin.com/in/mkenani" aria-label="LinkedIn"
                 ><i class="fab fa-linkedin"></i
               ></a>
             </div>
           </div>
-
-          <!-- Contact Form Column -->
           <form id="contactForm" class="contact-form animated-element delay-300">
             <h3 class="form-heading">Send a Message</h3>
 
             <div class="form-group">
               <label for="name">Your Name</label>
-              <!-- IMPORTANT: EmailJS uses these name attributes to match template variables -->
               <input type="text" id="name" name="from_name" required /> 
             </div>
 
@@ -101,12 +98,12 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-
-            <button type="submit" class="btn btn-primary btn-full-width">
-              Send Message
+             <div class="center-send-button">
+            <button type="submit" class="btn btn-primary contactForm-send-btn">
+              <i class="fas fa-paper-plane fa-1x" aria-hidden="true"></i>
+              <span class="send-text">S e n d</span>
             </button>
-
-            <!-- Message box for form status (instead of alert) -->
+             </div>
             <div id="form-status" class="form-status-message"></div>
           </form>
         </div>
@@ -115,19 +112,16 @@
 
     <footer class="footer">
       <div class="footer-content">
-        <p>
-          &copy; <span id="current-year"></span> Mkenani. All rights
-          reserved.
+        <p>Mphatso Kenani</p>
+        <p class="footer-italic">
+          &copy; <span id="current-year" ></span> Mkenani || All rights reserved.
         </p>
-        <p>Designed and Built by Mphatso Kenani</p>
         <div class="footer-social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
+          <a href="https://github.com/bece21-mkenani"><i class="fab fa-github"></i></a>
+          <a href="http://www.linkedin.com/in/mkenani"><i class="fab fa-linkedin"></i></a>
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
