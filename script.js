@@ -7,7 +7,7 @@ const themeToggle = document.querySelector("#theme-toggle");
 const overlay = document.getElementById("overlay-content");
 const htmlElement = document.documentElement;
 
-// ================== HEADER & NAVIGATION LOGIC ===================
+// ================== HEADER & NAVIGATION LOGIC ==================
 if (menuBtn) {
   menuBtn.onclick = () => {
     menuBtn.classList.toggle("fa-times");
@@ -25,7 +25,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-// ================== THEME SWITCHER LOGIC (GLOBAL) ================
+// ================== THEME SWITCHER LOGIC (GLOBAL) ===============
 function setTheme(theme) {
   htmlElement.setAttribute("data-theme", theme);
   localStorage.setItem("theme", theme);
@@ -38,7 +38,6 @@ function setTheme(theme) {
     }
   }
 }
-
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
@@ -47,7 +46,7 @@ if (themeToggle) {
   });
 }
 
-// ====================== UTILITIES & INITIAL LOAD  ======================
+// ====================== UTILITIES & INITIAL LOAD  =============
 
 function updateCopyrightYear() {
   const yearElement = document.getElementById("current-year");
@@ -56,7 +55,7 @@ function updateCopyrightYear() {
   }
 }
 
-// ====================== CONTACT PAGE LOGIC ===============================
+// ====================== CONTACT PAGE LOGIC ==================
 
 function initializeContactPageLogic() {
   const contactForm = document.getElementById("contactForm");
@@ -86,8 +85,6 @@ function initializeContactPageLogic() {
               "Thank you! Your message has been sent successfully.";
             statusMessage.className = "form-status-message success";
             contactForm.reset();
-
-            console.log("SUCCESS!", response.status, response.text);
           },
           function (error) {
             statusMessage.textContent =
@@ -166,7 +163,6 @@ function initializeSkillsPageLogic() {
 // ====================== PROJECTS PAGE LOGIC ======================
 
 function initializeProjectsPageLogic() {
-  console.log("Projects page initialized.");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
