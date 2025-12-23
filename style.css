@@ -1415,7 +1415,7 @@ body {
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 60px;
   width: 50px;
   height: 50px;
   background-color: #25d366;
@@ -1438,6 +1438,19 @@ body {
   transform: scale(1.1);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
+
+/*
+|--------------------------------------------------------------------------
+| WAPP RESPONSIVE
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+.whatsapp-float {
+  right: 20px;
+}
+}
+
 
 /*
 |--------------------------------------------------------------------------
